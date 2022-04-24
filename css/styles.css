@@ -1,0 +1,526 @@
+:root {
+  --header: #ffffff;
+  --portfolio: #2196f3;
+  --header-logo: #212121;
+  --header-logo-styles: #2196f3;
+  --header-color: #ffffff;
+  --header-items: #212121;
+  --main-item-heading: #212121;
+  --main-item-text: #757575;
+  --main-skills-heading: #212121;
+  --team: #f5f4fa;
+  --team-name: #212121;
+  --team-profession: #757575;
+  --footer-logo-text: #ffffff;
+  --hero: #2f303a;
+  --hover-focus: #2196f3;
+  --contacty: #757575;
+  --footer-logo: #ffffff;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.a {
+  text-decoration: none;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 1200px;
+
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.2;
+
+  letter-spacing: 0.03em;
+}
+/* --------------------------------------------------------------GENERAL------------------------------------------------------------ */
+.general {
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.genera-text {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.item-heading {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: auto;
+}
+
+.border {
+  border: 1px solid #ececec;
+}
+
+/* ----------------------------------------------------------HEADER-------------------------------------------------------------- */
+.header {
+  border-bottom: 1px solid #ececec;
+
+  background: var(--header);
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+}
+
+.head {
+  margin: 24px 0 25px 0;
+}
+
+.header-logo {
+  color: var(--header-logo);
+}
+
+.header-navigation {
+  color: var(--header-navigation);
+}
+
+.header-logo-styles {
+  color: var(--header-logo-styles);
+}
+
+.header-flex {
+  display: flex;
+}
+
+.header-info-margin {
+  margin: 32px 0;
+}
+
+.header-flex-partfolio {
+  display: flex;
+}
+
+.header-items {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: var(--header-items);
+}
+
+.header-items:hover,
+.header-items:focus {
+  color: var(--hover-focus);
+}
+
+.header-contakty {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--contacty);
+}
+
+.header-contakty:hover,
+.header-contakty:focus {
+  color: var(--hover-focus);
+}
+
+.header-stydia {
+  margin-left: 93px;
+}
+
+.header-port {
+  margin-left: 50px;
+}
+
+.header-cont {
+  margin-left: 50px;
+}
+
+.header-email {
+  margin-left: 331px;
+}
+
+.header-tele {
+  margin-left: 50px;
+}
+
+/* --------------------------------HERO------------------------------------- */
+.hero {
+  display: flex;
+
+  margin: auto;
+
+  height: 600px;
+
+  background: var(--hero);
+  outline: solid 1px #ff0000;
+}
+.hero-list {
+  margin-top: 200px;
+  margin-bottom: 30px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--header-color);
+}
+
+.hero-btn {
+  margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  background: var(--header-logo-styles);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.hero-btn-text {
+  margin: 10px 32px 10px 32px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: var(--header-color);
+}
+/* --------------------------------------------------------------MAIN------------------------------------------------------------ */
+.main-sections {
+  background: var(--header);
+}
+
+.main-item {
+  margin-top: 94px;
+
+  display: flex;
+}
+
+.main-item-heading {
+  color: var(--main-item-heading);
+}
+
+.main-margin {
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+
+.main-margin.last-child {
+  margin-right: 0;
+}
+
+.main-item-text {
+  margin-top: 10px;
+
+  max-width: 270px;
+
+  color: var(--main-item-text);
+}
+
+.main-skills-heading {
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-skills-heading);
+}
+
+.main-foto {
+  margin-right: 30px;
+}
+
+.main-foto.last-child {
+  margin-right: 0;
+}
+
+.img-margin {
+  margin-bottom: 94px;
+}
+
+/* --------------------------------------------------------------team------------------------------------------------------------ */
+.team-pading {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team {
+  background: var(--team);
+}
+.team-heading {
+  margin-bottom: 50px;
+
+  text-align: center;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-skills-heading);
+}
+
+.team-foto {
+  margin-right: 30px;
+
+  background-color: #ffffff;
+}
+
+.team-foto.last-child {
+  margin-right: 0;
+}
+
+.team-name {
+  margin-top: 30px;
+
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--team-name);
+}
+
+.team-profession {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: var(--team-profession);
+}
+
+/* ----------------------------------------------------------------footer-------------------------------------------------------------- */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background: var(--hero);
+}
+
+.footer-logo {
+  color: #2196f3;
+}
+
+.footer-logo-text {
+  color: #ffffff;
+}
+
+.yu {
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.cont-padding {
+  padding-top: 9px;
+  padding-bottom: 0;
+}
+
+.footer-item {
+  color: var(--header-color);
+}
+
+.footer-list {
+  padding-bottom: 9px;
+  padding-bottom: 0;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ---------------------------------------------------------btn---------------------------------------------------------------------- */
+.btn-padding {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.btn-text-padding {
+  padding: 6px 22px;
+}
+
+.portfolio-btn {
+  color: #212121;
+
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: #f5f4fa;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 6;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+/* ----------------------------------------------------------portfolio---------------------------------------------------------------- */
+
+.portfolio {
+  color: var(--portfolio);
+}
+
+.portfolio-img-flex {
+  margin: -24px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-main {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1, 6;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  background-color: var(--portfolio-main);
+}
+
+.portfolio-img {
+  position: absolute;
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+
+  background: var(--header-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-padding {
+  padding-bottom: 94px;
+}
+
+.portfolio-text {
+  padding-top: 20px;
+
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--items);
+}
+
+.portfolio-list {
+  padding-top: 4px;
+  padding-bottom: 20px;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 8;
+  letter-spacing: 0.03em;
+
+  color: var(--contakty);
+}
+
+.portfolio-kont {
+  color: var(--header-color);
+}
+
+.button:button {
+  color: var(--logo-color);
+}
+
+.portfolio-btn-padding {
+  padding-right: 8px;
+}
+/* --------------------------------flex-box--------------------------------------- */
+.flex-box {
+  margin: 15px;
+}
+
+.border-box {
+  border: 1px solid #eeeeee;
+}
+
+.text-box {
+  margin: 0 24px;
+}
