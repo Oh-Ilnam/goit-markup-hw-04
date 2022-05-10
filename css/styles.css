@@ -327,6 +327,18 @@ img {
   background: #f5f4fa;
   padding: 94px 0;
 }
+
+.main-icon {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 /* --------------------------------------------------------------team------------------------------------------------------------ */
 
 .team {
@@ -583,57 +595,6 @@ img {
   background-position: center;
 }
 
-.text-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
-
-  margin-bottom: 30px;
-}
-
-.icon-delivery::before {
-  background-image: url("../images/antenna1.svg");
-}
-
-.icon-mobile::before {
-  background-image: url("../images/clock1.svg");
-}
-
-.icon-code::before {
-  background-image: url("../images/diagram1.svg");
-}
-
-.icon-item::before {
-  background-image: url("../images/astronaut1.svg");
-}
-
-.icon-tel::before {
-  display: inline-block;
-  content: "";
-  height: 16px;
-  width: 10px;
-  background-image: url("../images/Vector.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  margin-right: 10px;
-}
-
-.icon-email::before {
-  display: inline-block;
-  content: "";
-  height: 12px;
-  width: 16px;
-  background-image: url("../images/envelope.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  margin-right: 10px;
-}
-
 .icon-social::after {
   display: inline-block;
   content: "";
@@ -664,4 +625,135 @@ img {
 
 .team-soc-svg {
   fill: #afb1b8;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+
+.email {
+  margin-right: 10px;
+  background-color: currentColor;
+}
+
+.clients {
+  margin-bottom: 50px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.main-clients {
+  padding: 94px 0;
+}
+
+.main-clients-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.main-clients-list + .main-clients-list {
+  margin-left: 30px;
+
+  background-color: red;
+}
+
+.main-clients-list:hover,
+.main-clients-list:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.main-clients-icon {
+  fill: #afb1b8;
+}
+
+.main-web {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+}
+
+.footer-link + .footer-link {
+  margin-left: 10px;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-modern {
+  margin-right: 156px;
+}
+
+.footer-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-emazing + .footer-emazing {
+  margin-left: 10px;
+  background-color: red;
+}
+
+.footer-social-link {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-links {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-links:hover,
+.social-links:focus {
+  background-color: #2196f3;
+}
+
+.footer-color-icon {
+  fill: #ffffff;
+}
+
+.main-clients-link:hover .main-clients-icon,
+.main-clients-link:focus .main-clients-icon {
+  fill: #2196f3;
 }
