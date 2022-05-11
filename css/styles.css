@@ -616,7 +616,6 @@ img {
 .team-soc-link {
   width: 44px;
   height: 44px;
-  background-color: red;
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -724,7 +723,6 @@ img {
 
 .footer-emazing + .footer-emazing {
   margin-left: 10px;
-  background-color: red;
 }
 
 .footer-social-link {
@@ -732,6 +730,7 @@ img {
   border-radius: 50%;
 }
 .social-links {
+  fill: #ffffff;
   width: 44px;
   height: 44px;
   border-radius: 50%;
