@@ -663,13 +663,10 @@ img {
 
 .main-clients-list + .main-clients-list {
   margin-left: 30px;
-
-  background-color: red;
 }
 
 .main-clients-list:hover,
 .main-clients-list:focus {
-  background-color: #2196f3;
   color: #ffffff;
 }
 
@@ -753,7 +750,11 @@ img {
   fill: #ffffff;
 }
 
-.main-clients-link:hover .main-clients-icon,
-.main-clients-link:focus .main-clients-icon {
-  fill: #2196f3;
+.main-clients-icon:hover,
+.main-clients-icon:focus {
+  border: 1px solid #2196f3;
+}
+
+.logo-items {
+  background-color: currentColor;
 }
