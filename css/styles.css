@@ -178,6 +178,9 @@ img {
 }
 
 .header-contakty {
+  display: flex;
+  align-items: center;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 14px;
@@ -649,9 +652,37 @@ img {
   margin-right: 0;
 }
 
-.flex-box:hover {
+.flex-shadow {
+  display: block;
+}
+
+.flex-shadow:hover,
+.flex-shadow:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.produkt-thumb {
+  position: relative;
+}
+
+.produkt-thumb:hover::before {
+  opacity: 1;
+}
+
+.produkt-thumb::before {
+  padding: 63px 24px;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  position: absolute;
+  display: inline-block;
+  content: "Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.";
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  color: #ffffff;
+  opacity: 0;
 }
 
 .border-box {
@@ -771,3 +802,41 @@ img {
 
   color: #212121;
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 255, 255, 0.221);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 400px;
+  min-width: 600px;
+
+  background-color: #ffffff;
+}
+
+/* .close-window {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1026px;
+  top: 229px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+} */
